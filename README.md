@@ -1,9 +1,9 @@
 **The scope of the project is to design and deploy a Milk Delivery &
 Management ERP system.**
 
-<h4>Features & Descriptions</h4>
-<hr>
-<h6>Customer App</h6>
+<h2>Features & Descriptions</h2>
+
+<h4>Customer App</h4>
 <ul>
 <li>Modern UI, Android based Customer App.</li>
 <li>Modern UI, iOS-based Customer App.</li>
