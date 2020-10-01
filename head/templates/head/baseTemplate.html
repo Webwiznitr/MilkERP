@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'head/jqueryui/jquery-ui.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'head/fullcalendar.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {% block style %}  {% endblock %}
+    <title>{% block title %} {% endblock %} </title>
+  </head>
+  <body>
+      {% load static %}
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3" style="box-shadow: 2px 2px 5px 2px grey;">
+        <a class="navbar-brand" href="/head/"><span class="text-danger">Stock Management System</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-4">
+            <li class="nav-item active">
+              <a class="nav-link" href="/head/">Home <i class="fa fa-home" aria-hidden="true"></i> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="/head/stock">Stocks <i class="fa fa-line-chart" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link" href="#">Pricing <i class="fa fa-money" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link " href="/head/category">category <i class="fa fa-calendar-times-o" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link " href="/head/storelist">Stores  <i class="fa fa-archive" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+   {% block body %}  {% endblock %}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="{% static 'head/jqueryui/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'head/datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{% static 'head/fullcalendar.min.js' %}"></script>
+    <script src="{% static 'head/moment.min.js' %}"></script>
+    {% block script %}  {% endblock %}
+  </body>
+</html>

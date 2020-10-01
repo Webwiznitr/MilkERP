@@ -1,0 +1,62 @@
+{% extends 'subhead/baseTemplate.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row vertical">
+        <div class="col-md-12 center-block">
+            <div class="breadcrumb">
+                <p><a href="/head/">Home</a> / Stock </p>
+            </div>
+            <div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h3 class="mb-0 text-center">Manage Stocks</h3>
+                </div>
+               
+                    </div>
+                    </div>
+                    </div>
+
+
+
+<table class="table table-bordered" id="categoriesTable">
+    
+    <thead>
+        <tr>
+            <th width="5%">ID</th>
+            <th width = "40%"> Stock Name</th>
+            <th width="20%">Category Name</th>
+            <th width="15%">Status</th>
+            <th width="15%">Stocks</th>
+            <th width="30%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% if stocks|length < 1 %}
+        <tr>
+        <td colspan="4" class="text-center">No data found, please add some data!</td>
+        </tr>
+    {% else %}
+        {% for i in stocks %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.category.name }}</td>
+                <td><label {% if i.Status == '1' %}class="badge badge-success" {% else %} class="badge badge-danger" {% endif %}>{{ i.get_Status_display }}</label></td>
+                <td>{{ i.quantity }}</td>
+                <td>
+                   <a href=""> <button class="btn btn-danger" id="btn-delete"  >
+                        <span class="glyphicon glyphicon-trash"></span>
+                        make Order
+                    </button></a>
+                   
+                </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+          </tbody>
+          </table>
+          </div>
+
+          {% endblock %}
+              

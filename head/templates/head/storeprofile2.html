@@ -1,0 +1,100 @@
+{% extends  'head/baseTemplate.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row vertical">
+        <div class="col-md-12 center-block">
+            <div class="breadcrumb">
+                <p><a href="/head/">Home</a> / <a href="/head/storelist">Store list</a> / {{user.name}} </p>
+            </div>
+            <div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h3 class="mb-0 text-center">Store Profile</h3>
+                </div>
+            
+                   
+
+
+                    <div class="mr-4 card-block ml-4">
+                        <table class="table table-striped mt-3">
+                            <thead>
+                              <tr>
+                           
+                                <th scope = "col"> Name</th>
+                                <td>{{user.name}}</td>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                          
+                                <th>Number</th>
+                                <td>{{user.number}}</td>
+                                
+                              </tr>
+                              <tr>
+                            
+                                <th scope = "col"> Email</th>
+                                <td>{{user.user.email}}</td>
+                              </tr>
+                              <tr>
+                            
+                                <th scope = "col"> User Name</th>
+                                <td>{{user.user.username}}</td>
+                              </tr>
+                              <tr>
+                         
+                                <th>Password</th>
+                                <td>xxxxxxxx</td>
+                                
+                              </tr>
+                              </tbody>
+                              </table>
+                        
+                              <hr>
+                        
+                            
+                    </div>
+                    <div class="card-header">
+                        <h3 class="mb-0 text-center">Stock Informations</h3>
+                    </div>
+                    <hr>
+    
+                    <table class="table table-bordered" id="categoriesTable">
+        
+                        <thead>
+                            <tr>
+                                <th width="5%">ID</th>
+                                <th width = "40%"> Stock Name</th>
+                                <th width="20%">Category Name</th>
+                                <th width="15%">Status</th>
+                                <th width="15%">Stocks</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% if stocks|length < 1 %}
+                            <tr>
+                            <td colspan="4" class="text-center">No data found, please add some data!</td>
+                            </tr>
+                        {% else %}
+                            {% for i in stocks %}
+                                <tr>
+                                    <td>{{ forloop.counter }}</td>
+                                    <td>{{ i.name }}</td>
+                                    <td>{{ i.category.name }}</td>
+                                    <td><label {% if i.Status == '1' %}class="badge badge-success" {% else %} class="badge badge-danger" {% endif %}>{{ i.get_Status_display }}</label></td>
+                                    <td>{{ i.quantity }}</td>
+                                    
+                                    </tr>
+                                    {% endfor %}
+                                    {% endif %}
+                              </tbody>
+                              </table>
+                        </div>
+                      </div>
+                    </div>
+</div>
+
+
+{% endblock %}

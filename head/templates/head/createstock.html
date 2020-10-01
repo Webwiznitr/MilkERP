@@ -1,0 +1,60 @@
+{% extends 'head/baseTemplate.html' %}
+{% block body %}
+
+
+<div class="container">
+    
+    <div class="row vertical">
+        <div class="col-md-12 center-block">
+            <div class="breadcrumb">
+                <p><a href="/head/">Home</a> / <a href="/head/stock">Stock</a>  / Create Stock </p>
+            </div>
+            <div class="card card-outline-secondary">
+                <div class="card-header">
+                    <h3 class="mb-0 text-center">Add  Stocks</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form create-form" autocomplete="off" method="post"
+                                          action="">
+                                        <div class="form-group">
+                                            <label for="categoryName">Name</label>
+                                            <input type="text" class="form-control" name="stockname" id="categoryName" required
+                                                   autocomplete="off">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="stockStatus">Status</label>
+                                            <select class="form-control" name="stockstatus" id="stockStatus">
+                                                <option value="">SELECT</option>
+                                                <option value="1">Available</option>
+                                                <option value="2">Not Available</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="stockStatus">category</label>
+                                            <select class="form-control" name="category" id="stockstatus">
+                                                <option value="">SELECT</option>
+                                                {% for i in category %}
+                                                <option value="{{i.id}}">{{i.name}}</option>
+                                                {% endfor %}
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="categoryName">Quantity</label>
+                                            <input type="number" class="form-control" name="stocknumber" id="categoryName" required
+                                                   autocomplete="off">
+                                        </div>
+                                       
+                                        {% csrf_token %}
+                                       
+                                            <button type="submit" class="btn btn-primary" id="createCategoryBtn"
+                                                    data-loading-text="loading...">Save changes
+                                            </button>
+                                        
+                                    </form>
+                </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+{% endblock %}

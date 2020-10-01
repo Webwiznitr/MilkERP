@@ -1,0 +1,117 @@
+{% extends 'head/baseTemplate.html' %}
+
+{% block body %}
+
+<div class="container ">
+  <div class="row vertical">
+    <div class="col-md-12 center-block">
+        <div class="breadcrumb">
+            <p><a href="/head/">Home</a> / <a href="/head/stock">Stock</a> / Send Stocks  </p>
+        </div>
+        <div class="card card-outline-secondary">
+            <div class="card-header">
+                <h3 class="mb-0 text-center">Manage Stocks</h3>
+            </div>
+           
+                </div>
+                </div>
+                </div>
+
+    <div class="col-md-12">
+      <div class="messages">
+        {% if messages %}
+            {% for msg in messages %}
+                <div class="alert alert-danger text-center" role="alert">
+                    <i class="glyphicon glyphicon-exclamation-sign"></i>{{ msg }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+        <form class="form create-form" id="frm"  method="post"
+action="">
+<div class="row">
+<div class="form-group col-md-4">
+  <label for="categoryName">Name</label>
+  <input type="text" class="form-control" name="stockname" id="categoryName" value="{{stock.name}}"
+         disabled>
+</div>
+<div class="form-group col-md-4">
+  <label for="stockStatus">Status</label>
+  <input type="text" class="form-control" name="stockstatus" id="stockStaus" value="{{stock.get_Status_display}}"
+         disabled>
+</div>
+<div class="form-group">
+  <label for="categoryStatus">category</label>
+  <input type="text" class="form-control" name="category" id="stockStaus" value="{{stock.category}}"
+         disabled>
+</div>
+</div>
+<!-- 
+
+<div class="form-group">
+  <label for="stockStatus">category</label>
+  <select class="form-control" name="category" id="stockstatus">
+      <option value="">SELECT</option>
+      {% for i in category %}
+      <option value="{{i.id}}">{{i.name}}</option>
+      {% endfor %}
+  </select>
+</div> -->
+<div class="row">
+<div class="form-group col-md-4">
+  <label for="squantity">Stocks</label>
+  <input type="number" class="form-control" name="stocknumber" id="squantity" value="{{stock.quantity}}"
+   disabled >
+</div>
+</div>
+<hr>
+<div class="card-header">
+    <h3 class="mb-0 text-center">Distribution</h3>
+</div>
+<div class="form-group col-md-5">
+    <label for="Dquantity">Quantity</label>
+    <input type="number" onchange="stk()" class="form-control" name="distributenumber" id="Dquantity" required 
+      >
+  </div>
+
+  <div class="form-group col-md-8">
+    <label for="stockStatus">Store</label>
+    <select class="form-control" name="stores" id="stockstatus">
+        <option value="">SELECT</option>
+        {% for i in store %}
+        <option value="{{i.id}}">{{i.name}}</option>
+        {% endfor %}
+    </select>
+  </div>
+  
+
+{% csrf_token %}
+
+  <button type="button" onclick="sbt()" class="btn btn-primary" id="createCategoryBtn"
+          data-loading-text="loading...">Save changes
+  </button>
+
+</form>
+
+    </div>
+</div>
+
+
+{% endblock %}
+{% block script %} 
+<script>
+     function stk (){
+       x= document.getElementById('squantity').value;
+       y = document.getElementById('Dquantity').value;
+       document.getElementById('squantity').value = x-y;
+      document.getElementById('Dquantity').disabled = true;
+    
+
+    }
+    function sbt(){
+      document.getElementById('Dquantity').disabled = false;
+      document.getElementById('squantity').disabled = false;
+      document.getElementById('frm').submit();
+    }
+</script>
+{% endblock %}
