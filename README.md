@@ -3,7 +3,7 @@ Management ERP system.**
 
 
 
-<h4>Customer App</h4>
+<h2>Customer App</h2>
 <ul>
 <li>Modern UI, Android based Customer App.</li>
 <li>Modern UI, iOS-based Customer App.</li>
@@ -29,7 +29,7 @@ Management ERP system.**
 <li>Custom Delivery Preferences</li>
 </ul>
 <br>
-<h4>Delivery Boy App</h4>
+<h2>Delivery Boy App</h2>
 <ul>
 <li> Modern UI, Android based Customer App</li>
 <li> Location & Area Based order assigning</li>
@@ -46,7 +46,7 @@ Management ERP system.**
 </ul>
 
 
-<h4>Hub Admin Panel</h4>
+<h2>Hub Admin Panel</h2>
 <ul>
 <li>Landscape mode Android based Admin Panel. Or, Web Based Platform</li>
 <li>Landscape mode iOS-based Admin Panel. Or, Web Based Platform</li>
@@ -62,7 +62,7 @@ Management ERP system.**
 <li>Manually Approving customer’s subscription</li>
 </ul>
 
-<h4>Super Admin Panel</h4>
+<h2>Super Admin Panel</h2>
 <ul>
 <li>Landscape mode Android based Admin Panel. Or, Web Based Platform.</li>
 <li>Landscape mode iOS-based Admin Panel. Or, Web Based Platform.</li>
@@ -93,7 +93,7 @@ Management ERP system.**
 
 
 
-<h4>Common Features</h4>
+<h2>Common Features</h2>
 <ul>
 <li> Different order scheduling option (Daily, custom days, range, no end)</li>
 <li> GST enabled billing system.</li>
