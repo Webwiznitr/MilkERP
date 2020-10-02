@@ -1,8 +1,9 @@
 # Project Milky 🥛
 
 The scope of the project is to design and deploy a Milk Delivery ERP system.
-
 The vision of this project is to develop and deploy an open source project to help out farmers in organising their milk delivery network.
+
+<img src="HFSchwags.jpg" height="600" >
 
 ### We are really excited to see your awesome PRs. As a recognition of your awesome efforts, we would be <span style="color:orange;">Shipping Free Schwag Kits 🎁</span> as a contribution gratitute.
 
