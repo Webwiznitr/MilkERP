@@ -1,7 +1,13 @@
-**The scope of the project is to design and deploy a Milk Delivery &
-Management ERP system.**
+# The scope of the project is to design and deploy a Milk Delivery ERP system.
 
+## Project is divided into 3 main parts.
+- Delivery Executive App
+- Customer App
+- Admin Panel
 
+### Delivery Executive App (Flutter Project)
+- Topic: Flutter
+- 
 
 <h2>Customer App</h2>
 <ul>
