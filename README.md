@@ -46,3 +46,5 @@ NOTE 2: Please abide by the [Code of Conduct](https://github.com/Webwiznitr/Milk
 
 ## Admin Panel (A Web Based Platform based on Node, React & Bootstrap4)
 - React or Bootstrap Based Responsive Admin Panel Layout
+
+More Details are coming soon...
