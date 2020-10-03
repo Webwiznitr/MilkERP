@@ -24,9 +24,9 @@ Please note we have a CODE_OF_CONDUCT.md, please follow it in all your interacti
 $ git clone https://github.com/<User-Name>/<Repo-Name>.git
 # Add upstream remote
 $ git remote add upstream https://github.com/Webwiznitr/MilkERP.git
-# Fetch and merge with upstream/development
+# Fetch and merge with upstream/master
 $ git fetch upstream
-$ git merge upstream/development
+$ git merge upstream/master
 
 ## Step 2: Create and Publish Working Branch
 $ git checkout -b <type>/<issue|issue-number>/{<additional-fixes>}
@@ -45,21 +45,21 @@ $ git push origin <type>/<issue|issue-number>/{<additional-fixes>}
 ## Committing and pushing your work
 # Ensure branch
 $ git branch
-# Fetch and merge with upstream/development
+# Fetch and merge with upstream/master
 $ git fetch upstream
-$ git merge upstream/development
+$ git merge upstream/master
 # Add untracked files
 $ git add .
 # Commit all changes with appropriate commit message and description
 $ git commit -m "your-commit-message" -m "your-commit-description"
-# Fetch and merge with upstream/development again
+# Fetch and merge with upstream/master again
 $ git fetch upstream
-$ git merge upstream/development
+$ git merge upstream/master
 # Push changes to your forked repository
 $ git push origin <type>/<issue|issue-number>/{<additional-fixes>}
 
 ## Creating the PR using GitHub Website
-# Create Pull Request from <type>/<issue|issue-number>/{<additional-fixes>} branch in your forked repository to the development branch in the upstream repository
+# Create Pull Request from <type>/<issue|issue-number>/{<additional-fixes>} branch in your forked repository to the master branch in the upstream repository
 # After creating PR, add a Reviewer (Any Admin) and yourself as the assignee
 # Link Pull Request to appropriate Issue, or Project+Milestone (if no issue created)
 # IMPORTANT: Do Not Merge the PR unless specifically asked to by an admin.
@@ -71,8 +71,8 @@ $ git push origin <type>/<issue|issue-number>/{<additional-fixes>}
 # Delete branch from forked repo
 $ git branch -d <type>/<issue|issue-number>/{<additional-fixes>}
 $ git push --delete origin <type>/<issue|issue-number>/{<additional-fixes>}
-# Fetch and merge with upstream/development
-$ git checkout development
+# Fetch and merge with upstream/master
+$ git checkout master
 $ git pull upstream
 $ git push origin
 ```
