@@ -1,0 +1,2 @@
+- name: Hacktoberfest Greet
+  uses: HarishTeens/hacktoberfest-greet@v1.1.0
