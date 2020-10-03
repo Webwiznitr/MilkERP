@@ -1,0 +1,33 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "abhibhaw",
+      "name": "Abhibhaw Asthana",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/39991296?v=4",
+      "profile": "https://abhibhaw.team",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Aniket762",
+      "name": "Aniket Pal",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/67703407?v=4",
+      "profile": "http://aliferous.xyz/",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "MilkERP",
+  "projectOwner": "Webwiznitr",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
