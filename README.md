@@ -54,7 +54,7 @@ NOTE 2: Please abide by the [Code of Conduct](https://github.com/Webwiznitr/Milk
 More Details are coming soon follow the repo to stay updated.
 
 ## Distribution & Deployment
-This project is sponsored by [GEPTON](https://gepton.com), and it will be used by [GEPTON](https://gepton.com) for commercial purposes and contributors don't researve any share on any profits.
+This project is sponsored by [GEPTON](https://gepton.com), and it will be used by [GEPTON](https://gepton.com) for commercial purposes and contributors don't reserve any share on any profits.
 
 ## Contributors ✨
 
