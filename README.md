@@ -1,4 +1,7 @@
 # Project Milky 🥛
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The scope of the project is to design and deploy a Milk Delivery ERP system.
 The vision of this project is to develop and deploy an open source project to help out farmers in organising their milk delivery network.
@@ -48,3 +51,22 @@ NOTE 2: Please abide by the [Code of Conduct](https://github.com/Webwiznitr/Milk
 - React or Bootstrap Based Responsive Admin Panel Layout
 
 More Details are coming soon...
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://abhibhaw.team"><img src="https://avatars3.githubusercontent.com/u/39991296?v=4" width="100px;" alt=""/><br /><sub><b>Abhibhaw Asthana</b></sub></a><br /><a href="https://github.com/Webwiznitr/MilkERP/commits?author=abhibhaw" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
