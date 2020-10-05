@@ -1,7 +1,7 @@
 # Project Milky 🥛
 [![Starware](https://img.shields.io/badge/Starware-⭐-black?labelColor=f9b00d)](https://github.com/zepfietje/starware)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 The scope of the project is to design and deploy a Milk Delivery ERP system.
@@ -67,6 +67,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://abhibhaw.team"><img src="https://avatars3.githubusercontent.com/u/39991296?v=4" width="100px;" alt=""/><br /><sub><b>Abhibhaw Asthana</b></sub></a><br /><a href="https://github.com/Webwiznitr/MilkERP/commits?author=abhibhaw" title="Documentation">📖</a></td>
     <td align="center"><a href="http://aliferous.xyz/"><img src="https://avatars2.githubusercontent.com/u/67703407?v=4" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/Webwiznitr/MilkERP/commits?author=Aniket762" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Prat15072000"><img src="https://avatars2.githubusercontent.com/u/56332414?v=4" width="100px;" alt=""/><br /><sub><b>Prat15072000</b></sub></a><br /><a href="https://github.com/Webwiznitr/MilkERP/commits?author=Prat15072000" title="Code">💻</a></td>
   </tr>
 </table>
 
